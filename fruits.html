@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="sound1.css">
+    <title>Document</title>
+<style>    
+    html{
+    font-size:10px;
+    background:url('files/fruits.jfif') center;
+    background-size:100% 100%;
+}
+body,html{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+    font-family: sans-serif;
+}
+.keys{
+ display:flex;
+flex:1;
+min-height:100vh;
+align-items:center;
+justify-content: center;
+}
+.key{
+border-radius:0.5rem;
+margin:1rem;
+text-align: center;
+transition:all 0.07s ease;
+box-shadow: 0 0 1rem #ffc600;
+width:15rem;
+text-align:center;
+color: white;
+background: #ffc600;
+}
+.key img{
+    height:100%;
+    width:100%;
+}
+.sound{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color:forestgreen;
+    text-shadow: 0 0 0.2rem red;
+}
+h1{
+  position: absolute;
+  top:5%;
+  left:12%;
+  box-sizing: border-box;
+  color:orange;
+  font-size: 6rem;
+  text-shadow: 0 0 0.5rem forestgreen;
+}
+</style>
+</head>
+<body>
+  <h1>Fruits Spellings</h1>
+<div class="keys">
+    <div onclick="scale0()" class="key">
+        <img src="files/apple.jfif" alt="">
+    <span class="sound">Apple</span>
+</div>
+<div onclick="scale1()" class="key">
+    <img src="files/banana.jfif" alt="">
+    <span class="sound">Banana</span>
+</div>
+<div onclick="scale2()" class="key">
+    <img src="files/orange.jfif" alt="">
+    <span class="sound">Orange</span>
+</div>
+<div onclick="scale3()" class="key">
+    <img src="files/pomegranate.jfif" alt="">
+    <span class="sound">Pomegranate</span>
+</div>
+<div onclick="scale4()" class="key">
+    <img src="files/pineapple.jfif" alt="">
+    <span class="sound">Pineapple</span>
+</div>
+<div onclick="scale5()" class="key">
+    <img src="files/mango.jfif" alt="">
+    <span class="sound">mango</span>
+</div>
+<div onclick="scale6()" class="key">
+    <img src="files/strawberry.jfif" alt="">
+    <span class="sound">strawberry</span>
+</div>
+<div onclick="scale7()" class="key">
+    <img src="files/grapes.jfif" alt="">
+    <span class="sound">Grapes</span>
+</div>
+<div onclick="scale8()" class="key">
+    <img src="files/cherry.jfif" alt="">
+    <span class="sound">Cherry</span>
+</div>
+</div>
+
+<audio src="files/recording.m4a"></audio>
+<audio src="files/recording (2).m4a"></audio>
+<audio src="files/recording (9).m4a"></audio>
+<audio src="files/recording (5).m4a"></audio>
+<audio src="files/recording (7).m4a"></audio>
+<audio src="files/recording (3).m4a"></audio>
+<audio src="files/recording (4).m4a"></audio>
+<audio src="files/recording (8).m4a"></audio>
+<audio src="files/recording (6).m4a"></audio>
+<script>
+    var x= document.getElementsByClassName("key")
+    var y=document.getElementsByTagName("audio")
+    var z=document.getElementsByClassName("sound")
+    function scale0() { 
+  x[0].style.transform="scale(1.1) rotate(5deg)"
+  x[0].style.transition="all 1s"
+  y[0].play();
+  z[0].style.letterSpacing="0.4rem";
+  z[0].style.transition="all 1s"
+    }
+    function scale1() { 
+  x[1].style.transform="scale(1.1) rotate(5deg)"
+  x[1].style.transition="all 1s"
+  y[1].play();
+  z[1].style.letterSpacing="0.4rem";
+  z[1].style.transition="all 1s"
+    }
+    function scale2() { 
+  x[2].style.transform="scale(1.1) rotate(5deg)"
+  x[2].style.transition="all 1s"
+  y[2].play();
+  z[2].style.letterSpacing="0.4rem";
+  z[2].style.transition="all 1s"
+    }
+    function scale3() {  
+  x[3].style.transform="scale(1.1) rotate(5deg)"
+  x[3].style.transition="all 1s"
+  y[3].play();
+  z[3].style.letterSpacing="0.13rem";
+  z[3].style.transition="all 1s"
+} 
+function scale4() {  
+  x[4].style.transform="scale(1.1)"
+  x[4].style.transition="all 1s"
+  y[4].play();
+  z[4].style.letterSpacing="0.4rem";
+  z[4].style.transition="all 1s"
+} 
+function scale5() { 
+  x[5].style.transform="scale(1.1) rotate(-5deg)"
+  x[5].style.transition="all 1s"
+  y[5].play();
+  z[5].style.letterSpacing="0.4rem";
+  z[5].style.transition="all 1s"
+    }
+    function scale6() { 
+  x[6].style.transform="scale(1.1) rotate(-5deg)"
+  x[6].style.transition="all 1s"
+  y[6].play();
+  z[6].style.letterSpacing="0.2rem";
+  z[6].style.transition="all 1s"
+    }
+    function scale7() { 
+  x[7].style.transform="scale(1.1) rotate(-5deg)"
+  x[7].style.transition="all 1s"
+  y[7].play();
+  z[7].style.letterSpacing="0.4rem";
+  z[7].style.transition="all 1s"
+    }
+    function scale8() { 
+  x[8].style.transform="scale(1.1) rotate(-5deg)"
+  x[8].style.transition="all 1s"
+  y[8].play();
+  z[8].style.letterSpacing="0.4rem";
+  z[8].style.transition="all 1s"
+    }
+
+</script>
+</body>
+
+</html>
